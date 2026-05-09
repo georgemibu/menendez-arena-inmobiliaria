@@ -16,13 +16,27 @@
 
 <body>
     <nav>
-        <img src="./assets/logo.png" alt="logo">
-        <ul>
+
+        <div class="mobile-left">
+
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
+
+            <img src="./assets/logo.png" alt="logo">
+
+        </div>
+
+        <ul id="nav-links">
             <li><a href="">Servicios</a></li>
             <li><a href="">Proyectos</a></li>
             <li><a href="">Contacto</a></li>
-            <button>Agendar reunión</button>
         </ul>
+
+        <button class="nav-btn">
+            Agendar reunión
+        </button>
+
     </nav>
 
     <section class="hero">
@@ -279,7 +293,8 @@
     <div class="banner-como-te-imaginas">
         <h3>¿Cómo te imaginás tu hogar?</h3>
         <p>Contanos qué necesitás, nosotros nos ocupamos del resto.<br>
-            <b>Hagamos realidad tu proyecto</b></p>
+            <b>Hagamos realidad tu proyecto</b>
+        </p>
         <button>Iniciá tu consulta</button>
     </div>
 
@@ -291,12 +306,163 @@
                 <h2>Quienes somos</h2>
             </div>
             <h3>Una <span>empresa familiar</span> con historia real.</h3>
-            <p>Tres generaciones de familia que entienden que una obra no es solo ladrillos, <b>es tu espacio de vida.</b></p>
+            <p>Tres generaciones de familia que entienden que una obra no es solo ladrillos, <b>es tu espacio de
+                    vida.</b></p>
         </div>
         <div class="quienes-somos-right">
             <img src="" alt="imagen">
         </div>
     </section>
+
+
+    <section class="casos-de-exito">
+        <div class="h2-container">
+            <img src="./assets/Ellipse 6.png" alt="">
+            <h2>Casos de éxito</h2>
+            <img src="./assets/Ellipse 6.png" alt="">
+        </div>
+        <h3>Trabajos de arquitectura,<br>con<span> resultados concretos</span>.</h3>
+
+        <div class="testimonials">
+            <div class="card">
+                <p>
+                    ""Refaccionamos el departamento completo y quedó increíble. El presupuesto fue exacto, ninguna
+                    sorpresa. Ya los recomendé a tres personas."
+                </p>
+
+                <div class="line"></div>
+
+                <h3>Lucía M.</h3>
+                <span>Refacción integral — Palermo, CABA</span>
+            </div>
+            <div class="card">
+                <p>
+                    ""Refaccionamos el departamento completo y quedó increíble. El presupuesto fue exacto, ninguna
+                    sorpresa. Ya los recomendé a tres personas.""
+                </p>
+
+                <div class="line"></div>
+
+                <h3>Lucía M.</h3>
+                <span>Refacción integral — Palermo, CABA</span>
+            </div>
+            <div class="card">
+                <p>
+                    ""Refaccionamos el departamento completo y quedó increíble. El presupuesto fue exacto, ninguna
+                    sorpresa. Ya los recomendé a tres personas.""
+                </p>
+
+                <div class="line"></div>
+
+                <h3>Lucía M.</h3>
+                <span>Refacción integral — Palermo, CABA</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactate">
+        <div class="contactate-container">
+            <div class="contactate-title">
+                <img src="./assets/Ellipse 5.png" alt="">
+                <h2>CONTACTÁTE</h2>
+            </div>
+            <h3>¿Tenés un terreno o <br>una reforma en mente?</h3>
+            <p>Coordiná tu visita y <br>empecemos el proyecto</p>
+            <button>
+                <img src="./assets/whatsapp-icon.png" alt="whatsapp-icon">
+                Escribinos por WhatsApp
+            </button>
+            <p>O por mail:</p>
+            <a href="">menendezhermanos@gmail.com</a>
+        </div>
+        <div class="formulario-container">
+            <form class="contact-form">
+
+                <div class="form-group full">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" placeholder="Tu nombre y apellido">
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Correo electrónico</label>
+                        <input type="email" placeholder="tu@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" placeholder="11 XXXX-XXXX">
+                    </div>
+
+                </div>
+                <div class="form-group full">
+                    <label>Tipo de Proyecto</label>
+
+                    <select>
+                        <option>Diseño Arquitectónico</option>
+                        <option>Construcción de Viviendas</option>
+                        <option>Refacción y Reformas</option>
+                        <option>Diseño de Locales comerciales</option>
+                        <option>Desarrollo e Inversiones</option>
+                        <option>Interiorismo y Diseño</option>
+                        <option>Tasación inmobiliaria estratégica</option>
+                    </select>
+                </div>
+
+                <div class="form-group full">
+                    <label>Zona del Proyecto</label>
+                    <input type="text" placeholder="¿Dónde?">
+                </div>
+
+                <div class="form-group full">
+                    <label>Contanos brevemente</label>
+                    <textarea placeholder="¿Qué querés hacer?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Enviar consulta
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-uno">
+                <img src="./assets/logo-footer.png" alt="">
+                <h3>Menendez Arena <span>Construcciones</span></h3>
+                <p>Estudio de arquitectura y constructora familiar con más de 3 generaciones de trayectoria en Buenos
+                    Aires.
+                    Diseño funcional, materiales de calidad y compromiso real.</p>
+            </div>
+            <div class="footer-top-dos">
+                <h4>SERVICIOS</h4>
+                <ul>
+                    <li>Diseño Arquitectónico</li>
+                    <li>Construcción de Viviendas</li>
+                    <li>Refacción y Reformas</li>
+                    <li>Diseño de locales comerciales</li>
+                    <li>Desarollo e Inversiones</li>
+                    <li>Interiorismo y Diseño</li>
+                    <li>Tasación inmobiliaria estratégica</li>
+                </ul>
+            </div>
+            <div class="footer-top-tres">
+                <h4>CONTACTO</h4>
+                <p>Buenos Aires, Argentina</p>
+                <a href="">menendezarenahermanos@gmail.com</a>
+                <a href="">@menendezarenahermanos</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>© 2026 Menendez Arena Construcciones. Todos los derechos reservados.</p>
+                <p>Develop by Audacity Comunicación</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
