@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+
+        <div class="mobile-left">
+
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
+
+            <img src="./assets/logo.png" alt="logo">
+
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Proyectos</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+
+        <button class="nav-btn">
+            <a href="#contacto">Agendar reunión</a>
+        </button>
+
+    </nav>
+
+
+
+
+
+    <section class="contactate" id="contacto">
+        <div class="contactate-container">
+            <div class="contactate-title">
+                <img src="./assets/Ellipse 5.png" alt="">
+                <h2>CONTACTÁTE</h2>
+            </div>
+            <h3>¿Tenés un terreno o <br>una reforma en mente?</h3>
+            <p>Coordiná tu visita y <br>empecemos el proyecto</p>
+            <button> <a href="https://wa.me/5491123456789" target="_blank">
+                    <img src="./assets/whatsapp-icon.png" alt="whatsapp-icon">
+                    Escribinos por WhatsApp
+            </button>
+            <p>O por mail:</p>
+            <a href="">menendezhermanos@gmail.com</a>
+        </div>
+        <div class="formulario-container">
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-group full">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre y apellido">
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Correo electrónico</label>
+                        <input type="email" name="email" placeholder="tu@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" name="telefono" placeholder="11 XXXX-XXXX">
+                    </div>
+
+                </div>
+                <div class="form-group full">
+                    <label>Tipo de Proyecto</label>
+
+                    <select name="proyecto">
+                        <option>Diseño Arquitectónico</option>
+                        <option>Construcción de Viviendas</option>
+                        <option>Refacción y Reformas</option>
+                        <option>Diseño de Locales comerciales</option>
+                        <option>Desarrollo e Inversiones</option>
+                        <option>Interiorismo y Diseño</option>
+                        <option>Tasación inmobiliaria estratégica</option>
+                    </select>
+                </div>
+
+                <div class="form-group full">
+                    <label>Zona del Proyecto</label>
+                    <input type="text" name="zona" placeholder="¿Dónde?">
+                </div>
+
+                <div class="form-group full">
+                    <label>Contanos brevemente</label>
+                    <textarea placeholder="¿Qué querés hacer?" name="mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Enviar consulta
+                </button>
+            </form>
+        </div>
+        <!-- POPUP -->
+        <div id="popupMensaje" class="popup">
+            <div class="popup-content">
+                <div class="text-container">
+                    <h4>¡Gracias por dar el primer paso!</h4>
+                    <p>
+                        En breve <span>nos pondremos en contacto</span> para conocer tu proyecto y acompañarte en los
+                        próximos pasos.
+                    </p>
+                </div>
+                <img src="./assets/logo.png" alt="">
+
+                <button onclick="cerrarPopup()">X</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-uno">
+                <img src="./assets/logo-footer.png" alt="">
+                <h3>Menendez Arena <span>Construcciones</span></h3>
+                <p>Estudio de arquitectura y constructora familiar con más de 3 generaciones de trayectoria en Buenos
+                    Aires.
+                    Diseño funcional, materiales de calidad y compromiso real.</p>
+            </div>
+            <div class="footer-top-dos">
+                <h4>SERVICIOS</h4>
+                <ul>
+                    <li>Diseño Arquitectónico</li>
+                    <li>Construcción de Viviendas</li>
+                    <li>Refacción y Reformas</li>
+                    <li>Diseño de locales comerciales</li>
+                    <li>Desarollo e Inversiones</li>
+                    <li>Interiorismo y Diseño</li>
+                    <li>Tasación inmobiliaria estratégica</li>
+                </ul>
+            </div>
+            <div class="footer-top-tres">
+                <h4>CONTACTO</h4>
+                <p>Buenos Aires, Argentina</p>
+                <a href="">menendezarenahermanos@gmail.com</a>
+                <a href="">@menendezarenahermanos</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>© 2026 Menendez Arena Construcciones. Todos los derechos reservados.</p>
+                <p>Develop by Audacity Comunicación</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

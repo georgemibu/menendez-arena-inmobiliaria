@@ -28,13 +28,13 @@
         </div>
 
         <ul id="nav-links">
-            <li><a href="">Servicios</a></li>
-            <li><a href="">Proyectos</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./proyectos.html">Proyectos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
 
         <button class="nav-btn">
-            Agendar reunión
+            <a href="#contacto">Agendar reunión</a>
         </button>
 
     </nav>
@@ -48,12 +48,12 @@
         <h2>Construimos el hogar<br>que <span>imaginaste</span></h2>
         <h3>Contanos qué necesitas <br><span>nosotros nos ocupamos del resto</span></h3>
         <div class="hero-buttons">
-            <button>Coordina tu visita</button>
-            <button>Ver proyectos</button>
+            <button class="hero-button-primary"><a href="./contacto.html">Coordina tu visita</a></button>
+            <button class="hero-button-secundary"><a href="./proyectos.html">Ver proyectos</a></button>
         </div>
     </section>
 
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
         <div class="proyectos-title">
             <div class="nuestros-proyectos">
                 <div class="h2-container">
@@ -63,7 +63,7 @@
                 </div>
                 <h3>De la idea al plano,<br><span>del plano a tu hogar</span></h3>
             </div>
-            <button>Ver más proyectos <img src="./assets/Arrow 1.png" alt=""></button>
+            <button><a href="./proyectos.html">Ver más proyectos <img src="./assets/Arrow 1.png" alt=""></a></button>
         </div>
 
         <section class="galeria">
@@ -161,14 +161,15 @@
         </section>
 
         <div class="container-boton-proyectos">
-            <button>Ver todos los proyectos <img src="./assets/Arrow 1 (1).png" alt=""></button>
+            <button><a href="./proyectos.html">Ver todos los proyectos <img src="./assets/Arrow 1 (1).png"
+                        alt=""></a></button>
         </div>
     </section>
 
 
 
 
-    <section class="como-trabajamos">
+    <section class="como-trabajamos" id="como-trabamos">
         <div class="como-trabajamos-left">
             <div class="como-trabajamos-title">
                 <img src="./assets/Ellipse 5.png" alt="">
@@ -295,11 +296,11 @@
         <p>Contanos qué necesitás, nosotros nos ocupamos del resto.<br>
             <b>Hagamos realidad tu proyecto</b>
         </p>
-        <button>Iniciá tu consulta</button>
+        <button><a href="./contacto.html">Iniciá tu consulta</a></button>
     </div>
 
 
-    <section class="quienes-somos">
+    <section class="quienes-somos" id="quienes-somos">
         <div class="quienes-somos-left">
             <div class="quienes-somos-title">
                 <img src="./assets/Ellipse 4.png" alt="">
@@ -360,7 +361,7 @@
         </div>
     </section>
 
-    <section class="contactate">
+    <section class="contactate" id="contacto">
         <div class="contactate-container">
             <div class="contactate-title">
                 <img src="./assets/Ellipse 5.png" alt="">
@@ -368,38 +369,38 @@
             </div>
             <h3>¿Tenés un terreno o <br>una reforma en mente?</h3>
             <p>Coordiná tu visita y <br>empecemos el proyecto</p>
-            <button>
-                <img src="./assets/whatsapp-icon.png" alt="whatsapp-icon">
-                Escribinos por WhatsApp
+            <button> <a href="https://wa.me/5491123456789" target="_blank">
+                    <img src="./assets/whatsapp-icon.png" alt="whatsapp-icon">
+                    Escribinos por WhatsApp
             </button>
             <p>O por mail:</p>
             <a href="">menendezhermanos@gmail.com</a>
         </div>
         <div class="formulario-container">
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
 
                 <div class="form-group full">
                     <label>Nombre y Apellido</label>
-                    <input type="text" placeholder="Tu nombre y apellido">
+                    <input type="text" name="nombre" placeholder="Tu nombre y apellido">
                 </div>
 
                 <div class="form-row">
 
                     <div class="form-group">
                         <label>Correo electrónico</label>
-                        <input type="email" placeholder="tu@gmail.com">
+                        <input type="email" name="email" placeholder="tu@gmail.com">
                     </div>
 
                     <div class="form-group">
                         <label>Teléfono</label>
-                        <input type="text" placeholder="11 XXXX-XXXX">
+                        <input type="text" name="telefono" placeholder="11 XXXX-XXXX">
                     </div>
 
                 </div>
                 <div class="form-group full">
                     <label>Tipo de Proyecto</label>
 
-                    <select>
+                    <select name="proyecto">
                         <option>Diseño Arquitectónico</option>
                         <option>Construcción de Viviendas</option>
                         <option>Refacción y Reformas</option>
@@ -412,19 +413,32 @@
 
                 <div class="form-group full">
                     <label>Zona del Proyecto</label>
-                    <input type="text" placeholder="¿Dónde?">
+                    <input type="text" name="zona" placeholder="¿Dónde?">
                 </div>
 
                 <div class="form-group full">
                     <label>Contanos brevemente</label>
-                    <textarea placeholder="¿Qué querés hacer?"></textarea>
+                    <textarea placeholder="¿Qué querés hacer?" name="mensaje"></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn">
                     Enviar consulta
                 </button>
-
             </form>
+        </div>
+        <!-- POPUP -->
+        <div id="popupMensaje" class="popup">
+            <div class="popup-content">
+                <div class="text-container">
+                    <h4>¡Gracias por dar el primer paso!</h4>
+                    <p>
+                        En breve <span>nos pondremos en contacto</span> para conocer tu proyecto y acompañarte en los próximos pasos.
+                    </p>
+                </div>
+                <img src="./assets/logo.png" alt="">
+
+                <button onclick="cerrarPopup()">X</button>
+            </div>
         </div>
     </section>
 
@@ -464,6 +478,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
