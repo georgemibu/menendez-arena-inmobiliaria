@@ -613,6 +613,24 @@ a {
         text-align: center;
     }
 
+    /*correcciones*/
+    .footer-top-uno p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.8;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-top-uno h3 {
+        font-size: 24px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+    }
+
+    /**/
+
     .footer-top-uno,
     .footer-top-dos {
         width: 100%;
