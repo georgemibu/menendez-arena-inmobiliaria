@@ -289,6 +289,46 @@ nav ul li a {
 
 
 
+
+
+
+/*banner-azul*/
+.banner-azul{
+    min-height: 146px;
+    background-color: #0D3053;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente-principal);
+    font-size: 22px;
+    color: var(--color-letra-blanca);
+    padding-left:60px;
+    padding-right:60px;
+}
+.banner-azul-top{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom:24px;
+    gap:20px;
+}
+.banner-azul-bottom{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap:20px;
+}
+.banner-text-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /*Contactate*/
 .contactate {
     width: 100%;
@@ -698,6 +738,32 @@ a {
     .hero-buttons button a {
         border-radius: 12px;
     }
+
+
+    /*banner azul*/
+    .banner-azul{
+        font-size: 11px;
+        padding-top:20px;
+        padding-bottom: 20px;
+        padding-left:20px;
+    }
+    .banner-azul-top{
+        flex-direction: column;
+        align-items: start;
+    }
+    .banner-azul-bottom{
+        flex-direction: column;
+        align-items: start;
+    }
+.banner-text-container{
+    gap:10px;
+}
+.banner-text-container img{
+    width: 27px;
+    height: 27px;
+
+}
+
 
     /*contactate*/
     .contactate {
