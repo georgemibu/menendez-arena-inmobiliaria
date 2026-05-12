@@ -164,50 +164,56 @@ nav ul li a {
 
 .contactate-container {
     width: 50%;
-    padding-left:100px;
-    display:flex;
+    padding-left: 100px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-bottom:140px;
+    padding-bottom: 140px;
 }
-.contactate-container h2{
+
+.contactate-container h2 {
     font-family: var(--fuente-secundaria);
-    font-size:54px;
+    font-size: 54px;
     font-weight: bold;
     line-height: 0.9;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
-.contactate-container h3{
+
+.contactate-container h3 {
     font-family: var(--fuente-principal);
     font-size: 32px;
     font-weight: 400;
     color: #655E5E;
 }
-.contactate-container h3 span{
+
+.contactate-container h3 span {
     font-weight: bold;
 }
-.contactate-box{
-    margin-top:30px;
-    margin-bottom:30px;
+
+.contactate-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-.contactate-box-item{
-    margin-top:20px;
-    display:flex;
+
+.contactate-box-item {
+    margin-top: 20px;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: var(--fuente-principal);
-    font-size:24px;
-    gap:14px;
+    font-size: 24px;
+    gap: 14px;
     color: #655E5E;
 }
-.contactate-box-item img{
+
+.contactate-box-item img {
     width: 27px;
     height: 27px;
 }
 
-.contactate-container h2 span{
-    color:var(--color-fondo-boton);
+.contactate-container h2 span {
+    color: var(--color-fondo-boton);
 }
 
 .contactate a {
@@ -374,6 +380,9 @@ select {
     font-size: 16px;
 }
 
+.mobile-contactate-box {
+    display: none;
+}
 
 /*popup*/
 .popup {
@@ -544,20 +553,24 @@ a {
 
     .contactate-container {
         width: 100%;
-        padding:26px;
-        padding-left:34px;
-        padding-bottom:0px;
+        padding: 26px;
+        padding-left: 34px;
+        padding-bottom: 0px;
     }
-    .contactate-box{
-        display:none;
+
+    .contactate-box {
+        display: none;
     }
-    .contactate-container h2{
+
+    .contactate-container h2 {
         font-size: 28px;
         margin-bottom: 10px;
     }
-    .contactate-container h3{
-        font-size:18px;
+
+    .contactate-container h3 {
+        font-size: 18px;
     }
+
     .contactate a {
         font-size: 18px;
         margin-top: 20px;
@@ -569,7 +582,7 @@ a {
         height: 40px;
         font-size: 12px;
         margin-bottom: 20px;
-        display:none;
+        display: none;
     }
 
     .contactate-container button a {
@@ -585,19 +598,24 @@ a {
         display: none;
     }
 
-    .formulario-container{
+    .formulario-container {
         width: 100%;
     }
-    .form-group label{
+
+    .form-group label {
         font-size: 14px;
     }
-    .contact-form input, .contact-form select, .contact-form textarea{
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
         font-size: 14px;
     }
-    .submit-btn{
+
+    .submit-btn {
         width: 111px;
         height: 21px;
-        padding:0;
+        padding: 0;
         font-size: 12px;
         font-family: var(--fuente-principal);
     }
@@ -607,6 +625,50 @@ a {
         width: 100%;
         flex-direction: column;
         border-radius: 0;
+    }
+
+
+
+    /*mobile contactate box*/
+    .mobile-contactate-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 26px;
+
+    }
+
+    .mobile-contactate-box-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 26px;
+        margin-top: 26px;
+        font-family: var(--fuente-principal);
+        font-size: 16px;
+        color: #655E5E;
+        gap: 20px;
+    }
+
+    .mobile-contactate-box-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-contactate-box-item p {
+        font-family: var(--fuente-principal);
+        font-size: 16px;
+        color: #655E5E;
+    }
+
+    .mobile-contactate-box-item img {
+        width: 29px;
+        height: 29px;
+        margin-bottom: 12px;
     }
 
     /*footer*/
