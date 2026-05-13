@@ -384,6 +384,36 @@ select {
     display: none;
 }
 
+@media (max-width: 1335px) {
+    .formulario-container {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1018px) {
+    .formulario-container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 923px) {
+    .contactate {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .contactate-container {
+        padding-left: 0;
+        width: 100%;
+        padding-bottom: 0px;
+        align-items: center;
+    }
+
+    .contactate-container h2 {
+        padding-left: 30px;
+    }
+}
+
 /*popup*/
 .popup {
     display: none;
@@ -434,6 +464,62 @@ select {
     color: #0D3053;
     font-weight: bold;
 }
+
+.nuestra-garantia {
+    margin-top: 20px;
+}
+
+.nuestra-garantia h2 {
+    font-family: var(--fuente-secundaria);
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nuestra-garantia h2 span {
+    color: var(--color-fondo-boton);
+}
+
+.garantias-container-box {
+    margin-top: 60px;
+    margin-bottom: 120px;
+
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: var(--fuente-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.garantias-container-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.garantias-container-items h3 {
+    font-family: var(--fuente-principal);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.garantias-container-items p {
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+    color: #655E5E;
+    font-size: 22px;
+}
+
+.garantias-container-items img {
+    width: 77px;
+    height: 76px;
+}
+
 
 /*footer*/
 footer {
@@ -613,8 +699,8 @@ a {
     }
 
     .submit-btn {
-        width: 111px;
-        height: 21px;
+        width: 119px;
+        height: 30px;
         padding: 0;
         font-size: 12px;
         font-family: var(--fuente-principal);
@@ -670,6 +756,36 @@ a {
         height: 29px;
         margin-bottom: 12px;
     }
+
+    /*garantías*/
+    .garantias-container-box {
+        flex-direction: column;
+    }
+
+    .garantias-container-items {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .garantias-container-items img {
+        width: 55px;
+        height: 54px;
+    }
+
+    .garantias-container-items h3 {
+        font-size: 18px;
+    }
+
+    .garantias-container-items p {
+        font-size: 16px;
+    }
+
+    .garantias-container-box {
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+    }
+
 
     /*footer*/
     footer {
