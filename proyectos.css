@@ -927,7 +927,7 @@ select {
     transform: translateY(-2px);
     background: #a8001f;
 }
-@media (max-width:1340px) {
+@media (max-width:1440px) {
  .formulario-container{
     width: 500px;
     padding-bottom:20px;
